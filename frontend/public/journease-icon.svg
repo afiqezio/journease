@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Journease logo</title>
+  <desc id="desc">A stylized paper plane forming a J in purplish gradient for Journease.</desc>
+
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#7B4EE6"/>
+      <stop offset="0.55" stop-color="#8F6AFD"/>
+      <stop offset="1" stop-color="#B693FF"/>
+    </linearGradient>
+
+    <!-- subtle inner glow -->
+    <filter id="f" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Transparent background (keeps icon flexible) -->
+  <rect x="0" y="0" width="512" height="512" fill="none"/>
+
+  <!-- Rounded badge circle -->
+  <g transform="translate(256,256)">
+    <circle r="190" fill="url(#g)" filter="url(#f)" />
+    <!-- subtle ring -->
+    <circle r="190" fill="none" stroke="#ffffff20" stroke-width="4" />
+  </g>
+
+  <!-- Paper plane shaped like a J -->
+  <g transform="translate(256,256) rotate(-18)">
+    <!-- plane body -->
+    <path d="M-20,-40 L160,0 L-20,40 L-8,2 Z"
+          fill="#FFFFFF" fill-opacity="0.94" stroke="#ffffffcc" stroke-width="1"/>
+
+    <!-- tail / J curve -->
+    <path d="M-20,-40 C-90,-10 -110,60 -20,110"
+          fill="none" stroke="#ffffffcc" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- small cut to form J negative space -->
+    <path d="M-8,2 L110,8" stroke="#ffffff88" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- purplish accent shadow on plane -->
+    <path d="M-4,-28 L120,0 L-4,28 L-4,2 Z"
+          fill="url(#g)" fill-opacity="0.12" stroke="none"/>
+  </g>
+</svg>

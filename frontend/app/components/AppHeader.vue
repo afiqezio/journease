@@ -3,12 +3,14 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-3">
-          <div class="bg-gradient-to-br from-indigo-500 to-purple-600 p-2 rounded-xl">
-            <Icon name="lucide:map" class="w-6 h-6 text-white" />
-          </div>
+            <img 
+              src="/journease-icon.svg" 
+              alt="Journease Logo" 
+              class="w-12 h-12"
+            />
           <div>
             <h1 class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              TripGenius AI
+              Journease AI
             </h1>
             <p class="text-xs text-gray-500">Your intelligent travel companion</p>
           </div>

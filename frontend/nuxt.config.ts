@@ -9,14 +9,14 @@ export default defineNuxtConfig({
   // Application configuration
   app: {
       head: {
-          title: 'EDAFY-Data Platform',
+          title: 'Journease AI',
           meta: [
               { charset: 'utf-8' },
               { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-              { name: 'description', content: 'EDAFY-Data Platform' }
+              { name: 'description', content: 'Journease AI' }
           ],
           link: [
-              { rel: 'icon', type: 'image/svg+xml', href: '/falcon-logo-type.svg' }
+              { rel: 'icon', type: 'image/svg+xml', href: '/journease-icon.svg' }
           ]
       }
   },
